@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>对读 · Bilingual — 隐私政策 / Privacy Policy / プライバシーポリシー</title>
+<style>
+:root{
+  --paper:#FBFAF7; --ink:#1D1C1A; --muted:#6B675F; --line:#E4E0D7; --soft:#F4F2EC;
+  --accent:#34418F; --accent-soft:#EEF0FA; --warn:#8A5A12; --warn-soft:#FBF0D9;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#1B1A18; --ink:#EDEAE3; --muted:#A39E93; --line:#34322D; --soft:#25241F;
+    --accent:#8C9BEA; --accent-soft:#252A45; --warn:#E0B060; --warn-soft:#3A2F1C; color-scheme: dark;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:14px/1.5 system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+button,input,select{font:inherit;color:inherit}
+.label{font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted)}
+.muted{color:var(--muted);font-size:12px}
+.card{border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.switch{position:relative;width:44px;height:26px;border-radius:13px;border:0;padding:3px;background:#CFCABF;cursor:pointer;flex:none;transition:background .15s}
+.switch::after{content:"";display:block;width:20px;height:20px;border-radius:10px;background:#fff;transition:transform .15s}
+.switch[aria-checked=true]{background:var(--accent)}
+.switch[aria-checked=true]::after{transform:translateX(18px)}
+.seg{display:flex;gap:2px;padding:3px;border-radius:12px;background:var(--soft)}
+.seg button{flex:1;height:32px;border:0;border-radius:9px;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--paper);color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.btn{height:36px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper);cursor:pointer}
+.btn.primary{border:0;background:var(--accent);color:#fff;font-weight:600}
+@media (prefers-color-scheme: dark){.btn.primary{color:#141413}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);box-shadow:none}}
+a{color:var(--accent)}
+kbd{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:5px;
+  border:1px solid var(--line);border-bottom-width:2px;background:var(--paper);font:600 11px system-ui,sans-serif}
+</style>
+<style>
+body{padding:48px 16px 80px}
+main{max-width:680px;margin:0 auto;line-height:1.75}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:19px;margin:40px 0 8px;padding-top:24px;border-top:1px solid var(--line)}
+h3{font-size:15px;margin:22px 0 4px}
+nav{display:flex;gap:16px;font-size:14px;margin:12px 0 0}
+p,li{font-size:15px}
+.muted{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>对读 · Bilingual</h1>
+  <p class="muted">生效日期 Effective 2026-09-29</p>
+  <nav><a href="#zh">简体中文</a><a href="#zh-tw">繁體中文</a><a href="#en">English</a><a href="#ja">日本語</a></nav>
+
+  <section id="zh" lang="zh-CN">
+    <h2>隐私政策</h2>
+    <p>对读是一个在浏览器里运行的翻译扩展。开发者不运营任何服务器，不收集、不出售、也不接收你的任何数据。扩展里没有统计、广告或追踪代码。</p>
+    <h3>本地翻译（默认）</h3>
+    <p>默认使用 Chrome 内置的翻译模型，网页文字只在你的电脑上处理，不会发送到任何地方。</p>
+    <h3>精译（可选）</h3>
+    <p>只有你在设置里填写了自己的密钥，并且选择了“精译”，或者在本地翻译不支持的页面上点了“用精译”时，扩展才会把你要看的段落文字，以及用于统一术语的页面正文（最多约 12,000 个字符），从你的浏览器直接发送给你选择的服务商。这些数据由该服务商按其隐私政策处理，不经过开发者的任何服务器。</p>
+    <h3>保存在你电脑上的数据</h3>
+    <ul>
+      <li>设置和各网站的显示方式：保存在 Chrome 的同步存储中。如果你开启了 Chrome 同步，会在你的设备之间同步。</li>
+      <li>自带密钥：只保存在这台电脑上扩展自己的存储里，网页无法读取，不同步。</li>
+      <li>已翻译的段落（原文与译文）：保存在扩展自己的本地数据库中，最多约 4 万条，旧的会自动清除；可在设置中一键清除。</li>
+      <li>你改过的术语译法：按网站保存在这台电脑上。</li>
+    </ul>
+    <h3>权限</h3>
+    <ul>
+      <li>activeTab、scripting：在你点击扩展图标或按快捷键时，在当前页面显示译文。</li>
+      <li>storage：保存上面列出的设置和译文。</li>
+      <li>网站访问权限（可选）：只在你打开某个网站的开关，或填写精译服务商地址时，才申请对应网站的权限。</li>
+    </ul>
+    <h3>联系</h3>
+    <p><a href="mailto:info@titpea.com">info@titpea.com</a></p>
+  </section>
+
+  <section id="zh-tw" lang="zh-TW">
+    <h2>隱私權政策</h2>
+    <p>對讀是一個在瀏覽器裡執行的翻譯擴充功能。開發者不經營任何伺服器，不收集、不出售、也不接收你的任何資料。擴充功能裡沒有統計、廣告或追蹤程式碼。</p>
+    <h3>本機翻譯（預設）</h3>
+    <p>預設使用 Chrome 內建的翻譯模型，網頁文字只在你的電腦上處理，不會傳送到任何地方。</p>
+    <h3>精譯（可選）</h3>
+    <p>只有你在設定裡填寫了自己的金鑰，並且選擇了「精譯」，或者在本機翻譯不支援的頁面上點了「用精譯」時，擴充功能才會把你要看的段落文字，以及用於統一術語的頁面正文（最多約 12,000 個字元），從你的瀏覽器直接傳送給你選擇的服務商。這些資料由該服務商依其隱私權政策處理，不經過開發者的任何伺服器。</p>
+    <h3>儲存在你電腦上的資料</h3>
+    <ul>
+      <li>設定和各網站的顯示方式：儲存在 Chrome 的同步儲存空間中。如果你開啟了 Chrome 同步，會在你的裝置之間同步。</li>
+      <li>自備金鑰：只儲存在這台電腦上擴充功能自己的儲存空間裡，網頁無法讀取，不同步。</li>
+      <li>已翻譯的段落（原文與譯文）：儲存在擴充功能自己的本機資料庫中，最多約 4 萬筆，舊的會自動清除；可在設定中一鍵清除。</li>
+      <li>你改過的術語譯法：依網站儲存在這台電腦上。</li>
+    </ul>
+    <h3>權限</h3>
+    <ul>
+      <li>activeTab、scripting：在你點擊擴充功能圖示或按快速鍵時，在目前頁面顯示譯文。</li>
+      <li>storage：儲存上面列出的設定和譯文。</li>
+      <li>網站存取權限（可選）：只在你開啟某個網站的開關，或填寫精譯服務商位址時，才申請對應網站的權限。</li>
+    </ul>
+    <h3>聯絡</h3>
+    <p><a href="mailto:info@titpea.com">info@titpea.com</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Privacy Policy</h2>
+    <p>Bilingual is a translation extension that runs in your browser. The developer runs no servers and does not collect, receive or sell any of your data. The extension contains no analytics, advertising or tracking code.</p>
+    <h3>On-device translation (default)</h3>
+    <p>By default Bilingual uses Chrome's built-in translation model. Page text is processed on your computer and is not sent anywhere.</p>
+    <h3>Precise translation (optional)</h3>
+    <p>Only if you add your own API key and either choose Precise or click “Use Precise” on a page that on-device translation doesn’t support, the extension sends the paragraphs you ask to see, plus up to about 12,000 characters of the page's main text used to keep terms consistent, directly from your browser to the provider you chose. That provider handles the data under its own privacy policy. Nothing passes through any server of the developer.</p>
+    <h3>Data stored on your computer</h3>
+    <ul>
+      <li>Settings and per-site display choices, in Chrome's sync storage. If Chrome Sync is on, they sync across your devices.</li>
+      <li>Your API key, stored only on this computer in the extension’s private storage, which web pages cannot read. It is never synced.</li>
+      <li>Translated paragraphs (original and translation), in the extension's own local database, up to about 40,000 entries with old ones removed automatically. You can clear them in Settings.</li>
+      <li>Term translations you edit, stored per site on this computer.</li>
+    </ul>
+    <h3>Permissions</h3>
+    <ul>
+      <li>activeTab, scripting: show translations on the current page when you click the icon or use the shortcut.</li>
+      <li>storage: keep the settings and translations listed above.</li>
+      <li>Site access (optional): requested only for a site you switch on, or for the endpoint of the Precise provider you enter.</li>
+    </ul>
+    <h3>Contact</h3>
+    <p><a href="mailto:info@titpea.com">info@titpea.com</a></p>
+  </section>
+
+  <section id="ja" lang="ja">
+    <h2>プライバシーポリシー</h2>
+    <p>対読はブラウザ内で動く翻訳拡張機能です。開発者はサーバーを運営しておらず、あなたのデータを収集・受信・販売しません。解析、広告、トラッキングのコードは含まれていません。</p>
+    <h3>端末内翻訳（既定）</h3>
+    <p>既定では Chrome に内蔵された翻訳モデルを使います。ページの文章はあなたの端末内で処理され、どこにも送信されません。</p>
+    <h3>精密翻訳（任意）</h3>
+    <p>自分の API キーを入力したうえで、精密翻訳を選んだ場合、または端末内翻訳が対応していないページで「精密翻訳を使う」を押した場合に限り、表示を求めた段落と、用語をそろえるためのページ本文（最大約 12,000 文字）が、あなたのブラウザから選んだプロバイダーへ直接送信されます。データはそのプロバイダーのプライバシーポリシーに従って扱われ、開発者のサーバーは一切経由しません。</p>
+    <h3>端末に保存されるデータ</h3>
+    <ul>
+      <li>設定とサイトごとの表示方法：Chrome の同期ストレージに保存され、Chrome 同期が有効ならデバイス間で同期されます。</li>
+      <li>API キー：この端末の拡張機能専用の領域にのみ保存され、ウェブページからは読み取れません。同期されません。</li>
+      <li>翻訳済みの段落（原文と訳文）：拡張機能専用のローカルデータベースに最大約 4 万件保存され、古いものは自動で削除されます。設定から消去できます。</li>
+      <li>修正した用語の訳：サイトごとにこの端末に保存されます。</li>
+    </ul>
+    <h3>権限</h3>
+    <ul>
+      <li>activeTab、scripting：アイコンを押すかショートカットを使ったとき、現在のページに訳文を表示します。</li>
+      <li>storage：上記の設定と訳文を保存します。</li>
+      <li>サイトへのアクセス（任意）：スイッチを入れたサイト、または入力した精密翻訳プロバイダーのエンドポイントに対してのみ要求します。</li>
+    </ul>
+    <h3>連絡先</h3>
+    <p><a href="mailto:info@titpea.com">info@titpea.com</a></p>
+  </section>
+</main>
+</body>
+</html>
