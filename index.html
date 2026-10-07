@@ -67,12 +67,13 @@ p,li{font-size:15px}
       <li>自带密钥：只保存在这台电脑上扩展自己的存储里，网页无法读取，不同步。</li>
       <li>已翻译的段落（原文与译文）：保存在扩展自己的本地数据库中，最多约 4 万条，旧的会自动清除；可在设置中一键清除。</li>
       <li>你改过的术语译法：按网站保存在这台电脑上。</li>
-      <li>无痕窗口：不保存各网站的显示方式、排版和术语，也不保存译文；关闭窗口后不留记录。</li>
+      <li>无痕窗口：不保存各网站的显示方式、排版和术语，也不保存译文。只有你在无痕窗口里打开了某个网站的“自动开始”，这个网站的授权才会保留（可随时关掉）。</li>
     </ul>
     <h3>权限</h3>
     <ul>
       <li>activeTab、scripting：在你点击扩展图标或按快捷键时，在当前页面显示译文。</li>
       <li>storage：保存上面列出的设置和译文。</li>
+      <li>offscreen：在扩展自己的隐藏页面里运行 Chrome 内置的本地翻译，这样启用一次，所有网站都能用。</li>
       <li>网站访问权限（可选）：只在你打开某个网站的开关，或填写精译服务商地址时，才申请对应网站的权限。</li>
     </ul>
     <h3>联系</h3>
@@ -92,13 +93,14 @@ p,li{font-size:15px}
       <li>自備金鑰：只儲存在這台電腦上擴充功能自己的儲存空間裡，網頁無法讀取，不同步。</li>
       <li>已翻譯的段落（原文與譯文）：儲存在擴充功能自己的本機資料庫中，最多約 4 萬筆，舊的會自動清除；可在設定中一鍵清除。</li>
       <li>你改過的術語譯法：依網站儲存在這台電腦上。</li>
-      <li>無痕視窗：不儲存各網站的顯示方式、排版和術語，也不儲存譯文；關閉視窗後不留紀錄。</li>
+      <li>無痕視窗：不儲存各網站的顯示方式、排版和術語，也不儲存譯文。只有你在無痕視窗裡開啟了某個網站的「自動開始」，這個網站的權限才會保留（可隨時關閉）。</li>
     </ul>
     <h3>權限</h3>
     <ul>
       <li>activeTab、scripting：在你按一下擴充功能圖示或按快速鍵時，在目前頁面顯示譯文。</li>
       <li>storage：儲存上面列出的設定和譯文。</li>
-      <li>網站存取權限（可選）：只在你開啟某個網站的「開啟這個網站時自動啟用」，或填寫精譯供應商位址時，才申請對應網站的權限。</li>
+      <li>offscreen：在擴充功能自己的隱藏頁面裡執行 Chrome 內建的本機翻譯，這樣啟用一次，所有網站都能用。</li>
+      <li>網站存取權限（可選）：只在你開啟某個網站的「開啟此網站時自動開始」，或填寫精譯供應商位址時，才申請對應網站的權限。</li>
     </ul>
     <h3>聯絡</h3>
     <p><a href="mailto:info@titpea.com">info@titpea.com</a></p>
@@ -117,12 +119,13 @@ p,li{font-size:15px}
       <li>Your API key, stored only on this computer in the extension’s private storage, which web pages cannot read. It is never synced.</li>
       <li>Translated paragraphs (original and translation), in the extension's own local database, up to about 40,000 entries with old ones removed automatically. You can clear them in Settings.</li>
       <li>Term translations you edit, stored per site on this computer.</li>
-      <li>In Incognito windows, nothing is kept per site (display choice, layout, terms) and no translations are stored; nothing remains after you close the window.</li>
+      <li>In Incognito windows, nothing is kept per site (display choice, layout, terms) and no translations are stored. The only exception: if you switch on “start automatically” for a site there, that site permission stays until you switch it off.</li>
     </ul>
     <h3>Permissions</h3>
     <ul>
       <li>activeTab, scripting: show translations on the current page when you click the icon or use the shortcut.</li>
       <li>storage: keep the settings and translations listed above.</li>
+      <li>offscreen: run Chrome's built-in on-device translation in the extension's own hidden page, so a language pair turned on once works on every site.</li>
       <li>Site access (optional): requested only for a site you switch on, or for the endpoint of the Precise provider you enter.</li>
     </ul>
     <h3>Contact</h3>
@@ -142,12 +145,13 @@ p,li{font-size:15px}
       <li>API キー：この端末の拡張機能専用の領域にのみ保存され、ウェブページからは読み取れません。同期されません。</li>
       <li>翻訳済みの段落（原文と訳文）：拡張機能専用のローカルデータベースに最大約 4 万件保存され、古いものは自動で削除されます。設定から消去できます。</li>
       <li>修正した用語の訳：サイトごとにこの端末に保存されます。</li>
-      <li>シークレット ウィンドウでは、サイトごとの表示方法・レイアウト・用語や訳文を保存しません。ウィンドウを閉じると何も残りません。</li>
+      <li>シークレット ウィンドウでは、サイトごとの表示方法・レイアウト・用語や訳文を保存しません。ただし、そこでサイトの「自動で開始」をオンにした場合は、そのサイトの権限がオフにするまで残ります。</li>
     </ul>
     <h3>権限</h3>
     <ul>
       <li>activeTab、scripting：アイコンを押すかショートカットを使ったとき、現在のページに訳文を表示します。</li>
       <li>storage：上記の設定と訳文を保存します。</li>
+      <li>offscreen：Chrome 内蔵の端末内翻訳を拡張機能専用の非表示ページで実行します。一度有効にすれば、すべてのサイトで使えます。</li>
       <li>サイトへのアクセス（任意）：スイッチを入れたサイト、または入力した高精度翻訳プロバイダーのエンドポイントに対してのみ要求します。</li>
     </ul>
     <h3>連絡先</h3>
